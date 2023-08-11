@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.login.LoginFragment"
+    android:background="@drawable/bg">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp">
+            <TextView
+                android:id="@+id/tvHosgeldin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hoşgeldiniz"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:id="@+id/tvdescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lütfen bilgileriniz ile giriş yapınız"
+                android:textSize="15dp"
+                />
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-Posta Adresiniz"
+                android:textSize="15dp"
+                android:layout_marginTop="20dp"/>
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Enter Email"
+                android:textSize="15dp"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="5dp"
+                android:drawableRight="@drawable/tick"/>
+
+            <TextView
+                android:id="@+id/tvPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Parola"
+                android:textSize="15dp"
+
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:inputType="textPassword"
+                android:hint="Enter Password"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:drawableRight="@drawable/eye"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Beni Hatırla"
+                    android:checked="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Şifremi Unuttum"
+                    android:layout_marginLeft="80dp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

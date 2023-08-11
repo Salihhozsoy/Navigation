@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.book.BookFragment">
+
+
+    <EditText
+        android:id="@+id/etBookName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Kitap Adı"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etPageNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Page Number"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/etBookName"
+        android:layout_margin="20dp" />
+    <EditText
+        android:id="@+id/etBookPublisher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Book Publisher"
+        app:layout_constraintTop_toBottomOf="@+id/etPageNumber"
+        android:layout_margin="20dp"/>
+
+    <Spinner
+        android:id="@+id/spAuthors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/etBookPublisher"
+        android:layout_margin="20dp"
+        android:padding="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAddBook"
+        app:layout_constraintTop_toBottomOf="@+id/spAuthors"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Kitap Ekle"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnKitapListesineGecis"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddBook"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Kitap Listesi"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
